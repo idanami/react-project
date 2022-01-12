@@ -1,0 +1,31 @@
+.age-container {
+    display: flex;
+    gap: 0.75rem;
+    flex-direction: column;
+    margin-bottom: $m-size;
+    h4 {
+        font-size: $m-size;
+    }
+    .age-lists {
+        display: grid;
+        gap: 0.75rem;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: repeat(3,1fr);
+    }
+    .selected {
+        background-color: rgb(67, 67, 149);
+    }
+    @media (min-width: $desktop-breakpoint) {
+        margin-bottom: $l-size;
+        .age-lists {
+            display: flex;
+            column-gap: 0.75rem;
+            width: 100%;
+            .age-list {
+                flex: 1;
+            }
+        }
+    }
+
+}
+

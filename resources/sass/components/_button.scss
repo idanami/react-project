@@ -1,0 +1,28 @@
+.button {
+    background: rgb(255, 138, 54);
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    border-radius: 0.75rem;
+    color: white;
+    cursor: pointer;
+    font-size: $l-size;
+    height: 3.5rem;
+    width: 100%;
+    &:disabled {
+        cursor: default;
+        opacity: .5;
+    }
+
+}
+
+.button-age__input {
+    background: #ffff;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    color: #000000;
+    height: 5rem;
+}
+
+.button-showQuote {
+    background: rgb(92, 92, 202);
+    font-weight: 500;
+}
